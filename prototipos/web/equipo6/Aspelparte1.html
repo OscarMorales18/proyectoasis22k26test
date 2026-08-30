@@ -21,21 +21,17 @@
                 <h1>Control de Pagos</h1>
                 <p>Aspel Bancos tienen un encabezado especifico para conciliar lo que serían los movimientos bancos como transferencias, conciliaciones, consultar agentas, etc.;
                 pero en este punto nos enfocaremos en lo que vendrían siendo los Movimientos.</p>
-                <img src="imagenes/Imagen1.png" alt="Primera_Imagen" width="600px" height="350px"/>
                 <p>Como podemos ver en la imagen, los movimientos serían los principales procesos que estaría manejando el Sistema de Aspel Bancos; podemos describir los siguientes
                 movimientos: 1. Efectivo, 2. Cheque y 3. Transferencia. </p>
-                <img src="imagenes/Imagen2.png" alt="Primera_Imagen" width="600px" height="350px"/>
                 <p>En esa misma ventana podremos acceder a una nueva mediante el botón de 1. agregar; específicamente para registrar 2. movimientos con efectivo o de transferencia.
                 De cualquier modo, el acceso a esa ventana de manera directa está en los botones debajo de 1. Agregar. Como podemos ver, mediante un Id podremos seleccionar la 3. 
                 Forma de pago (se ajusta automáticamente dependiendo del tipo de movimiento 1-efectivo o 3-trasnferencia), adicional, podremos hacer pagos hacia clientes o proveedores;
                 estos al contar con algunos datos de ingresos distintos, se hace el siguiente movimiento:</p>
-                <img src="imagenes/Imagen3.png" alt="Primera_Imagen" width="600px" height="350px"/>
                 <p>De manera inteligente, se ocultan para el usuario algunas opciones si se selecciona un movimiento de pago a un proveedore y se relevan en el movimiento de pago del 
                 cliente. Pudiendo seleccionar cualquier movimiento con la misma interfaz sin afectar el funcionamiento del sistema (ahorrando una ventana más a la cual programar). 
                 El ingreso de datos se basa en el relleno de casillas que soliciten la información; dependiendo de lo solicitado, se requerirá del Id del cliente o Proveedor, lo 
                 que hará un llamado para obtener el nombre del involucrado (igual que el método de pago). Además, se llena una parte de la tabla con la referencia SAE 
                 (valor referente al sistema de administración) para obtener el valor a pagar. Una vez terminado se selecciona Guardar o F3 para poder almacenar el pago con éxito en la base de datos.</p>
-                <img src="imagenes/Imagen4.png" alt="Primera_Imagen" width="600px" height="350px"/>
                 <h3>Aspectos a tomar en cuenta:</h3>
                 <p>El sistema funciona como cualquier otro sistema que hayamos programado; consistiendo de insertar datos y almacenarlo en la base de datos; pero a diferencia de 
                 lo que sabemos realizar, Aspel Bancos se caracteriza por hacer uso de buenas prácticas como las siguientes:</p>
@@ -48,7 +44,6 @@
                 <p>Aspel Bancos es un sector que se ocupa de todos los procesos bancarios, de modo que al finalizar algún proceso todo registro queda almacenado en una misma base de 
                 datos. Aspel cuenta con integraciones a otros sectores como el de contabilidad (Aspel COI), y como vimos en el proceso de control de pagos, los montos se calculan 
                 previamente en el sector de administración a través de Aspel SAE.</p>
-                <img src="imagenes/Imagen5.png" alt="Segunda_Imagen" width="600px" height="350px"/>
                 <p>Al referir un registro completo, se pueden seleccionar los valores necesarios desde Aspel SAE (cálculo contable de pago) hasta llegar a Aspel Bancos (pago directo) 
                 para culminar el proceso de pagos. Lo interesante es la forma en que esto se relaciona, ya que cada sistema de Aspel maneja su propia base de datos; Aspel Bancos 
                 trabaja en la suya y Aspel SAE en la suya. La conexión se basa en un método antiguo pero eficaz para su época.</p>
@@ -71,11 +66,9 @@
                 <p>La visualización de información es esencial para monitorear el rendimiento del sistema y adicionalmente indica si la empresa está cumpliendo con sus objetivos establecidos
                      o si tendría que optimizar diversos aspectos por medio de una toma de decisiones. El sistema Aspel Bancos tiene una forma tradicional de visualizar la información, 
                      principalmente por medio de reportes; como vimos antes, se pueden visualizar registros en una vista previa, pero además contamos con una sección específica para los reportes.</p>
-                <img src="imagenes/Imagen6.png" alt="Tercera_Imagen" width="600px" height="350px"/>
                 <p>Los reportes en Aspel Bancos tienen su propio encabezado, pudiendo generar reportes diarios, resúmenes de cuentas, pronósticos de ingresos, flujos de efectivo, etc.; 
                     siendo el más relevante el Reporte de Estados de Cuenta. Se puede rellenar la información solicitada para acceder a todos los movimientos que realizó una cuenta, o solo 
                     los registrados en un lapso de fechas, además de poder seleccionar el estado de los movimientos e incluso incluir la información del usuario que realizó la acción.</p>
-                <img src="imagenes/Imagen7.png" alt="Cuarta_Imagen" width="600px" height="350px"/>
                 <p>Como podemos ver, el reporte generado no se trata de una tabla; se trata de un documento formal el cual muestra los movimientos que realizó la cuenta descrita por el Id. 
                 Teniendo un formato formal que describe con exactitud los cheques generados para luego enseñar el saldo total que realizo el movimiento. Tenemos un apartado para poder 
                 1. Desplazarlos por si se trata de más de una página, 2. Imprimir los reportes, 3. Filtrar los datos para poder encontrar registros y 4. Guardarlos como un archivo para tenerlo en la 
